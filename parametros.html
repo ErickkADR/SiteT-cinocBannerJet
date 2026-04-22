@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parâmetros Fibra Laser — Bannerjet Group</title>
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('bj-theme') || 'light');</script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/images/Group.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a href="index.html" class="header-logo"><img src="/images/Bannerjet-Group-logo-White.png" alt="Bannerjet Group"></a>
+    <nav class="header-nav">
+      <a href="index.html">Início</a>
+      <a href="fibra-laser.html">Fibra Laser</a>
+      <a href="firmwares.html">Firmwares</a>
+    </nav>
+    <div class="header-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Mudar tema"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container" style="position:relative;z-index:1">
+    <h1 class="page-hero-title">Parâmetros <span class="accent">Fibra Laser</span></h1>
+    <p class="page-hero-desc">Configurações de velocidade, potência, frequência e largura de pulso para diferentes materiais e aplicações.</p>
+  </div>
+</section>
+
+<div style="padding: 56px 0 64px">
+  <div class="container">
+
+    <!-- GUIA RÁPIDO -->
+    <div class="params-intro fade-up">
+      <h3>Entendendo os Parâmetros</h3>
+      <p>
+        Os parâmetros abaixo são os mais críticos para obter um resultado preciso na fibra laser.
+        Pequenas variações afetam diretamente a qualidade da gravação ou marcação.
+        Sempre realize testes em retalhos antes de trabalhar na peça final.
+      </p>
+      <div class="param-tags">
+        <span class="param-tag">Velocidade (mm/s)</span>
+        <span class="param-tag">Potência (%)</span>
+        <span class="param-tag">Frequência (kHz)</span>
+        <span class="param-tag">Largura de Pulso (μs)</span>
+        <span class="param-tag">Passadas</span>
+        <span class="param-tag">Intervalo entre linhas (mm)</span>
+      </div>
+    </div>
+
+    <!-- EXPLICAÇÃO DE CADA PARÂMETRO -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; margin: 28px 0 40px;" class="fade-up">
+
+      <div style="background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:20px">
+        <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:var(--text-1)"><i class="fa-solid fa-gauge" style="margin-right:8px;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"></i>Velocidade</div>
+        <p style="font-size:13px;color:var(--text-2);line-height:1.7">Controla quão rápido o cabeçote se move. Velocidade baixa = mais energia entregue ao material (gravação mais funda). Velocidade alta = passagem rápida e superficial.</p>
+      </div>
+
+      <div style="background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:20px">
+        <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:var(--text-1)"><i class="fa-solid fa-fire" style="margin-right:8px;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"></i>Potência</div>
+        <p style="font-size:13px;color:var(--text-2);line-height:1.7">Define a intensidade do laser (0–100 %). Para metais, geralmente trabalha-se com 60–90 %. Potência excessiva pode causar queima ou deformação.</p>
+      </div>
+
+      <div style="background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:20px">
+        <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:var(--text-1)"><i class="fa-solid fa-wave-square" style="margin-right:8px;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"></i>Frequência</div>
+        <p style="font-size:13px;color:var(--text-2);line-height:1.7">Número de pulsos por segundo (kHz). Frequência alta = efeito de calor contínuo. Frequência baixa = pulsos mais espaçados, ideal para peeling de anodizado.</p>
+      </div>
+
+      <div style="background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:20px">
+        <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:var(--text-1)"><i class="fa-solid fa-ruler" style="margin-right:8px;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text"></i>Largura de Pulso</div>
+        <p style="font-size:13px;color:var(--text-2);line-height:1.7">Duração de cada pulso em microssegundos (μs). Pulso longo = mais energia por disparo. Pulso curto = gravação mais fina e detalhada, menos zona afetada pelo calor.</p>
+      </div>
+
+    </div>
+
+    <!-- TABELA DE PARÂMETROS -->
+    <h2 class="page-heading fade-up">Tabela de Parâmetros por Material</h2>
+    <div class="table-wrapper fade-up">
+      <table class="data-table" style="min-width:700px">
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Espessura</th>
+            <th>Vel. (mm/s)</th>
+            <th>Potência (%)</th>
+            <th>Freq. (kHz)</th>
+            <th>Pulso (μs)</th>
+            <th>Passadas</th>
+            <th>Observações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- PREENCHER: adicione uma linha por material/configuração
+          <tr>
+            <td>Aço inox</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Alumínio anodizado</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1</td>
+            <td>Peeling de anodizado</td>
+          </tr>
+          -->
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12px;color:var(--text-3);margin-top:12px">
+      <i class="fa-solid fa-circle-info" style="margin-right:4px"></i>
+      Os valores acima são pontos de partida. Realize sempre testes antes de produzir em série.
+    </p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col"><h4>Lasers</h4><a href="fibra-laser.html">Fibra Laser</a><a href="laser-co2.html">Laser CO2</a><a href="parametros.html">Parâmetros</a></div>
+      <div class="footer-col"><h4>Programas</h4><a href="programas.html">EzCad</a><a href="programas.html">LightBurn</a></div>
+      <div class="footer-col"><h4>Recursos</h4><a href="firmwares.html">Firmwares</a><a href="perfil-cores.html">Perfil de Cores</a></div>
+      <div class="footer-col"><h4>Suporte</h4><a href="#">WhatsApp (11) xxxx-xxxx</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Bannerjet Group. Todos os direitos reservados.</span>
+      <span class="footer-brand">Central Técnica</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
