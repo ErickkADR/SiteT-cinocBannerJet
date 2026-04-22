@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firmwares — Bannerjet Group</title>
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('bj-theme') || 'light');</script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/images/Group.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a href="index.html" class="header-logo"><img src="/images/Bannerjet-Group-logo-White.png" alt="Bannerjet Group"></a>
+    <nav class="header-nav">
+      <a href="index.html">Início</a>
+      <a href="index.html#categorias">Categorias</a>
+      <a href="firmwares.html">Firmwares</a>
+    </nav>
+    <div class="header-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Mudar tema"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container" style="position:relative;z-index:1">
+    <h1 class="page-hero-title">Firmwares <span class="accent">Disponíveis</span></h1>
+    <p class="page-hero-desc">Todos os firmwares de todos os equipamentos Bannerjet em um só lugar. Use a busca para encontrar rapidamente o arquivo que precisa.</p>
+  </div>
+</section>
+
+<div style="padding: 56px 0 64px">
+  <div class="container">
+
+    <!-- BUSCA -->
+    <div class="search-wrapper fade-up">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input
+        type="search"
+        id="firmware-search"
+        class="search-input"
+        placeholder="Pesquisar por equipamento, arquivo ou descrição…"
+        autocomplete="off"
+      >
+    </div>
+
+    <!-- TABELA -->
+    <div class="table-wrapper fade-up">
+      <table class="data-table" id="firmware-table" style="min-width:700px">
+        <thead>
+          <tr>
+            <th>Equipamento</th>
+            <th>Nome do Arquivo</th>
+            <th>Data</th>
+            <th>Descrição / Correção</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!-- A3 PRO -->
+          <tr>
+            <td><a href="A3.html" style="font-weight:600;color:var(--text-1)">A3 Pro</a></td>
+            <td>A3Pro_FW_v1.0.bin</td>
+            <td>Jan 2024</td>
+            <td>Correção de leitura USB</td>
+            <td><a href="#" class="download-link" target="_blank"><i class="fa-solid fa-download"></i> Baixar</a></td>
+          </tr>
+          <tr>
+            <td><a href="A3.html" style="font-weight:600;color:var(--text-1)">A3 Pro</a></td>
+            <td>A3Pro_FW_v1.1.bin</td>
+            <td>Mar 2025</td>
+            <td>Melhoria de precisão no corte</td>
+            <td><a href="#" class="download-link" target="_blank"><i class="fa-solid fa-download"></i> Baixar</a></td>
+          </tr>
+
+          <!-- PREENCHER: adicione linhas dos demais equipamentos seguindo o padrão:
+          <tr>
+            <td><a href="PAGINA.html" style="font-weight:600;color:var(--text-1)">Nome do Equipamento</a></td>
+            <td>nome_arquivo.bin</td>
+            <td>Mês Ano</td>
+            <td>Descrição da atualização</td>
+            <td><a href="LINK_DO_ARQUIVO" class="download-link" target="_blank"><i class="fa-solid fa-download"></i> Baixar</a></td>
+          </tr>
+          -->
+
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:12px;color:var(--text-3);margin-top:14px">
+      <i class="fa-solid fa-circle-info" style="margin-right:4px"></i>
+      Sempre faça backup das configurações antes de atualizar o firmware do equipamento.
+    </p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col"><h4>Plotters</h4><a href="A3.html">A3 Pro</a><a href="craft.html">Craft</a><a href="profissional-v48.html">Profissional V48</a></div>
+      <div class="footer-col"><h4>Lasers</h4><a href="fibra-laser.html">Fibra Laser</a><a href="laser-co2.html">Laser CO2</a></div>
+      <div class="footer-col"><h4>Impressoras</h4><a href="uv-90cm.html">UV 90 cm</a><a href="eco-solvente-180cm.html">Eco Solvente 180</a></div>
+      <div class="footer-col"><h4>Recursos</h4><a href="programas.html">Programas</a><a href="perfil-cores.html">Perfil de Cores</a><a href="parametros.html">Parâmetros Laser</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Bannerjet Group. Todos os direitos reservados.</span>
+      <span class="footer-brand">Central Técnica</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
